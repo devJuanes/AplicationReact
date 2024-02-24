@@ -1,0 +1,202 @@
+
+
+/* Estilos para la página de crear evento */
+.page-content {
+  min-height: 100vh; /* Altura mínima de la página */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.banner {
+  background-color: #007bff; /* Color de fondo del banner */
+  color: #fff; /* Color del texto del banner */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed; /* Fija el banner en la parte superior */
+  top: 0; /* Lo sitúa al principio de la ventana del navegador */
+  left: 0; /* Ajusta el margen izquierdo para ocupar todo el ancho */
+}
+
+
+.create-event-form {
+  width: 100%;
+  padding: 20px;
+  background-color: white; /* Color de fondo del formulario */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Ancho máximo para el formulario */
+  margin: auto; /* Centra horizontalmente */
+  margin-top: 20px; /* Agrega margen superior */
+}
+
+.create-event-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.create-event-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #0a0a0a;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.create-event-form button {
+  width: calc(100% - 20px);
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-event-form button:hover {
+  background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+}
+
+.back-link {
+  display: block;
+  margin-bottom: 20px;
+  color: #007bff; /* Color del enlace */
+  text-decoration: none;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color del texto del footer */
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed; /* Fija el footer en la parte inferior */
+  bottom: 0; /* Lo sitúa al final de la ventana del navegador */
+  left: 0; /* Ajusta el margen izquierdo para ocupar todo el ancho */
+}
+
+
+/* Estilos para EventList */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Mínimo de altura de la ventana */
+}
+
+.event-list .banner {
+  background-color: #007bff; /* Color de fondo del banner */
+  color: #fff; /* Color del texto del banner */
+  padding: 40px 20px; /* Espaciado interno del banner */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-bottom: 20px; /* Espacio entre el banner y las tarjetas */
+}
+
+.event-list .banner h1 {
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 10px; /* Espacio inferior del título */
+}
+
+.event-list .banner p {
+  font-size: 1.1rem; /* Tamaño del texto */
+}
+
+.event-list .event-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  flex-grow: 1; /* Ocupa el espacio restante */
+}
+
+/* Estilos para el botón de crear evento */
+.event-list .btn {
+  display: inline-block;
+  padding: 10px 20px; /* Espaciado interno del botón */
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.event-list .btn:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para EventCard */
+.event-card {
+  background-color: #f9f9f9; /* Color de fondo de la tarjeta */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Mayor profundidad de sombra */
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333; /* Color del título */
+}
+
+.event-card p {
+  margin-bottom: 5px;
+  color: #666; /* Color del texto */
+}
+/* Estilos para el Footer */
+.footer {
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color del texto del footer */
+  text-align: center;
+  padding: 20px 0;
+}
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  border: none; /* Elimina el borde */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}
+.event-list .create-event-button-container {
+  margin-bottom: 20px; /* Agrega un margen inferior al contenedor del botón */
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #007bff; /* Color del enlace */
+  text-decoration: none;
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 10px 20px; /* Añade padding para darle espacio alrededor del texto */
+  border: 2px solid #007bff; /* Añade borde alrededor del enlace */
+  border-radius: 5px; /* Añade bordes redondeados */
+  transition: background-color 0.3s ease; /* Agrega transición suave al cambiar el color de fondo */
+
+  /* Estilos al pasar el mouse sobre el enlace */
+  &:hover {
+    background-color: #007bff; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+  }
+}

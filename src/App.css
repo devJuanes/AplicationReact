@@ -1,0 +1,51 @@
+.home-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.home-page h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-buttons .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn-primary {
+  background-color: #007bff;
+}
+
+.cta-buttons .btn-secondary {
+  background-color: #6c757d;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #0056b3;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background-color: #545b62;
+}
